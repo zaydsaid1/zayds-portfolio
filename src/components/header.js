@@ -1,51 +1,28 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 export default function Header() {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [style, setStyle] = useState({});
-  const [scrollY, setScrollY] = useState(0);
-
-   function manageHeaderStyle() {
-    setScrollY(window.pageYOffset);
-    if (scrollY > 250) {
-      setStyle({
-        backgroundColor: "#29323c",
-      });
-    } else {
-      setStyle({
-        backgroundColor: "transparent",
-      });
-    }
-  }
-
-  useEffect(() => {
-    function watchScroll() {
-      window.addEventListener("scroll", manageHeaderStyle);
-    }
-    watchScroll();
-    return () => {
-      window.removeEventListener("scroll", manageHeaderStyle);
-    };
-  });
+    
   return (  
-    <header>
-    <h1 class="portfolio">Portf<span class="olio">olio</span></h1>
-    <nav>
-        <div class="hamb">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-
-        <ul class="nav-list">
-            <li><a href="#HOME">HOME</a></li>
-            <li><a href="#ABOUT ME">ABOUT ME</a></li>
-            <li><a href="#projects">PROJECTS</a></li>
-            <li><a href="https://github.com/zaydsaid1">GITHUB</a></li>
-            <li class="btn"><a href="mailto:zsaid735@gmail.com">CONTACT</a></li>
-        </ul>
-    </nav>
-</header>
+<header>
+        <h1>Zayd Said</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#about-me">About Me</a>
+                </li>
+                <li>
+                    <a href="#work">Work</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+                <li>
+                    <a href="https://github.com/zaydsaid1/portfolio" data-after="Contact"
+                    >Github</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
   );
 
 }
