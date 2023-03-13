@@ -17,15 +17,7 @@ export default function project() {
       <div class="imagerow">
  
          <img class="img2" src={NoteTaker} alt="bird" width={600} height={200}/>
-         <p class="project-two">This web application is a note taker using HTML, CSS, JavaScript,
-              node.js & express.js. You are presented with a homepage, when
-              pressing the button at the center of the page you are taken to the
-              note taker page. This page allows you to type in a note and save
-              it to the front end and back end. This application has been
-              created to demonstrate my skills in connecting the front end to
-              the back end using express.js & node.js.This project was built to
-              showcase my abilities within the backend using node.js &
-              express.js. The note becomes saved into the backend.</p>
+         <p class="project-two">TThe goal was to create an application that can be used to write, save, and delete notes. This app uses an express backend and saves and retrieves note data from a JSON file. The process involved building the application backend and connecting it with the frontend. For users that need to keep track of a lot of information, it's easy to forget or be unable to recall something important. Being able to take persistent notes allows users to have written information available when needed.</p>
       
     </div>
   </section>
