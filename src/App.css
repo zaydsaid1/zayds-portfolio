@@ -114,6 +114,9 @@ header nav ul li a {
   align-items: center;
   flex-direction: column;
 }
+.project-three {
+  color: whitesmoke;
+}
 
 .img2:hover {
   opacity: 0.15;
